@@ -7,6 +7,7 @@ import os
 app = FastAPI()
 
 
+
 @app.post("/files/")
 async def file(file: bytes = File(...)):
     content = file.decode('utf-8')
